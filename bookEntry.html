@@ -12,19 +12,18 @@
     <h1>Log Your Library</h1>
     <h2>Check your library wherever you are. Never buy the same book twice again.</h2>
     <h3>Enter the information for each book below, then hit save to store your book to your online library.</h3>
-    <div>
+    <form action="javascript:;" onsubmit="save(this)">
         <p>Title:</p>
         <input type="text" id="title" />
-    </div>
-    <div>
+
         <p>Author:</p>
         <input type="text" id="author" />
-    </div>
-    <div>
+
         <p>Summary: (optional)</p>
         <input type="text" id="summary" />
-    </div>
-    <button onclick="save()">Save</button>
+        
+        <input type="submit" value="save" />
+    </form>
 
     <p id="demo"></p>
     
